@@ -7,6 +7,9 @@
     --font-texto: 'Moon Dance', cursive;
     --font-alternativa: 'Parisienne', cursive;
     --font-padrao: 'Source Sans Pro', sans-serif;
+
+    --cor01: white;
+    --cor02: black;
 }
 
 *{
@@ -22,8 +25,7 @@ body {
 
 header {
     position: relative;
-    width: 100vw;
-    height: 85vh;
+    height: 100vh;
     background: url('../img/guarajuba-tema-principal.jpeg') center center no-repeat fixed;
     background-size: cover;
     margin: auto;
@@ -44,7 +46,7 @@ header nav a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.5rem;
-    color: black;
+    color: var(--cor02);
     font-weight: bold;
     padding: 10px;
     margin: 20px;
@@ -52,66 +54,68 @@ header nav a {
 }
 
 header nav a:hover {
-    color: white;
+    color: var(--cor01);
+}
+
+header h1 {
+    font-family: var(--font-titulo);
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    background-color: var(--cor01);
+    color: var(--cor02);
+    width: 100%; 
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 30px 0;
+    white-space: nowrap;
 }
 
 
 main {
-    width: 70vw;
-    margin: auto;
 }
 
-main h1 {
-    font-family: var(--font-titulo);
-    font-size: 4rem;
-    color: rgb(0, 0, 0);
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-    position: relative;
-    width: fit-content; 
-    margin: auto;
-    padding: 20px;
-}
-
-main section p {
+main p {
     font-family: var(--font-alternativa);
     font-size: 2.5rem;
     text-align: justify;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
     text-indent: 40px;
     padding: 20px;
-    margin-top: 40px;
+    color: var(--cor01);
+    height: 100%;
 }
 
 main figure {
     position: relative;
 }
 
-main figure figcaption {
+main figcaption {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: fit-content;
     padding: 10px;
-    top: 0px;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0px;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.400);
-    color: white;
-    font-size: 1.5rem;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.400);
+    border-radius: 20px 0px 0px 20px;
+    background-color: rgba(0, 0, 0, 0.600);
     text-align: center;
-    opacity: 0;
 }
 
-main figure figcaption:hover {
-    opacity: 1;
+main figure figcaption.figleft {
+    left: 0px;
+    border-radius: 0px 20px 20px 0px;
 }
+
 
 main figure.img {
-    height: 40vh;
+    height: 120vh;
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.349);
-}
-
-main figure.img:hover {
-    opacity: 90%;
 }
 
 main figure#img01 {
@@ -139,5 +143,4 @@ footer p {
     font-size: 1rem;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
 }
