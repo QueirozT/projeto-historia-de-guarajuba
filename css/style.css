@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Moon+Dance&family=Parisienne&family=Source+Sans+Pro&display=swap');
+
+:root {
+    --font-titulo: 'Courgette', cursive;
+    --font-texto: 'Moon Dance', cursive;
+    --font-alternativa: 'Parisienne', cursive;
+    --font-padrao: 'Source Sans Pro', sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--font-padrao);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    background: url('../img/guarajuba-tema-principal.jpeg') center center no-repeat fixed;
+    background-size: cover;
+    margin: auto;
+}
+
+header nav {
+    position: absolute;
+    display: block;
+    white-space: nowrap;
+    top: 1%;
+    right: 10%;
+    background-color: rgba(255, 255, 255, 0.300);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+header nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+    position: sticky;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+
+main {
+    width: 70vw;
+    margin: auto;
+}
+
+main h1 {
+    font-family: var(--font-titulo);
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: fit-content; 
+    margin: auto;
+    padding: 20px;
+}
+
+main section p {
+    font-family: var(--font-alternativa);
+    font-size: 2.5rem;
+    text-align: justify;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
+    text-indent: 40px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+main figure {
+    position: relative;
+}
+
+main figure figcaption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    top: 0px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.400);
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.400);
+    text-align: center;
+    opacity: 0;
+}
+
+main figure figcaption:hover {
+    opacity: 1;
+}
+
+main figure.img {
+    height: 40vh;
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.349);
+}
+
+main figure.img:hover {
+    opacity: 90%;
+}
+
+main figure#img01 {
+    background: url('../img/guarajuba-tema.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+main figure#img02 {
+    background: url('../img/castelo-garcia-d-avila.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+main figure#img03 {
+    background: url('../img/guarajuba-barco.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+
+main figure#img04 {
+    background: url('../img/guarajuba-condominio-paraiso.jpg') center top no-repeat fixed;
+    background-size: cover;
+}
+
+
+footer p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
