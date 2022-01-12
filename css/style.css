@@ -140,7 +140,82 @@ main figure#img04 {
 
 
 footer p {
-    font-size: 1rem;
+    font-size: 16px;
     text-align: center;
     padding: 20px;
+}
+
+
+@media (max-width: 1400px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 1300px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 1110px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 70%;
+    }
+
+    header nav {
+        position: absolute;
+        display: block;
+        white-space: nowrap;
+        width: fit-content;
+        top: 1%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    main figcaption, main figure figcaption.figleft {
+        border-radius: 20px;
+        width: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 640px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 50%;
+    }
+
+    header nav {
+        padding: 10px 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 40%;
+    }
+    
+    header h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 40%;
+    }
 }
