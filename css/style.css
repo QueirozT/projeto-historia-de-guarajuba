@@ -167,6 +167,10 @@ footer p {
         font-size: 70%;
     }
 
+    header {
+        background-position: right center;
+    }
+
     header nav {
         position: absolute;
         display: block;
