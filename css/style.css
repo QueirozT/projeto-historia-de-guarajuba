@@ -10,6 +10,7 @@
 
     --cor01: white;
     --cor02: black;
+    --cor03: skyblue;
 }
 
 *{
@@ -37,7 +38,7 @@ header nav {
     white-space: nowrap;
     top: 1%;
     right: 10%;
-    background-color: rgba(255, 255, 255, 0.300);
+    background-color: rgba(0, 0, 0, 0.300);
     border-radius: 8px;
     padding: 10px;
 }
@@ -46,7 +47,7 @@ header nav a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.5rem;
-    color: var(--cor02);
+    color: var(--cor01);
     font-weight: bold;
     padding: 10px;
     margin: 20px;
@@ -54,16 +55,16 @@ header nav a {
 }
 
 header nav a:hover {
-    color: var(--cor01);
+    color: var(--cor03);
 }
 
 header h1 {
     font-family: var(--font-titulo);
     font-size: 4rem;
     text-align: center;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-    background-color: var(--cor01);
-    color: var(--cor02);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.800);
+    color: var(--cor01);
     width: 100%; 
     display: block;
     position: absolute;
@@ -138,9 +139,22 @@ main figure#img04 {
 
 
 footer p {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.800);
+    color: var(--cor01);
     font-size: 16px;
     text-align: center;
     padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor01);
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 
